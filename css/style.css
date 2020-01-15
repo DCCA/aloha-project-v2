@@ -3,15 +3,17 @@
 /* Goal: less then 620 lines */
 
 /* General style */
-html, 
+html,
 body {
-    font-size: 14px;
+	font-size: 14px;
 	min-width: 355px;
 	text-align: center;
 	color: #2d2d2d;
 	font-family: Raleway;
 	box-sizing: border-box;
 }
+
+/* Add a container tag */
 
 h1,
 h2 {
@@ -23,8 +25,8 @@ h2 {
 h3 {
 	font-size: 1.8rem;
 	font-family: Playfair Display;
-    color: #e2574c;
-    padding: 1.4rem 0;
+	color: #e2574c;
+	padding: 1.4rem 0;
 }
 
 p {
@@ -249,13 +251,30 @@ main h1 {
 }
 
 form {
-	padding-bottom: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+    width: 80%;
 }
 
 input,
 button {
-	border-radius: 4rem;
+    border-radius: 4rem;
+    border: solid white;
 	padding: 0.4rem;
+    box-shadow: none;
+    width: 80%;
+}
+
+input {
+    padding: ;
+}
+
+button {
+	position: absolute;
+	background-color: #e2574c;
+	color: white;
+    right: 0;
+    width: 25%;
 }
 
 /* Footer */
@@ -274,4 +293,16 @@ footer {
 .social-media-list {
 	display: flex;
 	padding-top: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+	body {
+		background-color: lightblue;
+	}
+}
+
+@media only screen and (min-width: 1240px) {
+	body {
+		background-color: red;
+	}
 }
