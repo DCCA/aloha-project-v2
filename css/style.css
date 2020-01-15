@@ -106,8 +106,7 @@ nav a {
 /* Main Section */
 main {
 	position: relative;
-	background-image:
-        /* linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  */ url('../images/flower-bkgd.jpg');
+	background-image: url('../images/flower-bkgd.jpg');
 	background-position: center;
 	background-size: cover;
 	height: 24rem;
@@ -154,7 +153,7 @@ main h1 {
 /* Section of Select Items */
 .select-items {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(4, 14rem);
 }
 
@@ -168,11 +167,11 @@ main h1 {
 }
 
 .big-card {
-	grid-column: span 2;
+	grid-column: span 4;
 }
 
 .normal-card {
-	grid-column: span 1;
+	grid-column: span 2;
 }
 
 .men {
@@ -293,7 +292,6 @@ footer {
 	background-color: #242424;
 	color: white;
 	font-size: 1rem;
-	/* padding: 2rem; */
 }
 
 li {
@@ -319,9 +317,70 @@ li p {
 	padding-bottom: 3rem;
 }
 
+.social-text {
+	display: none;
+}
+
+/* Tablet */
 @media only screen and (min-width: 600px) {
 	body {
 		background-color: lightblue;
+	}
+	/* Section of Select Items - Tablet Version */
+	.select-items {
+		grid-template-rows: repeat(2, 14rem);
+	}
+
+	nav {
+		width: 40%;
+		order: 0;
+		border: none;
+	}
+
+	.big-card {
+		grid-column: span 2;
+	}
+
+	.normal-card {
+		grid-column: span 1;
+	}
+
+	/* Footer */
+	footer.flex-center {
+		flex-direction: row;
+		text-align: left;
+		padding-bottom: 3rem;
+		justify-content: space-between;
+	}
+
+	.social-media-list {
+		flex-direction: column;
+		text-align: left;
+	}
+
+	ul.social-media-list,
+	.social-media-list li {
+		padding: 0%;
+		margin: 0%;
+	}
+
+	ul.social-media-list {
+		width: 20%;
+		padding-top: 3rem;
+	}
+
+	.social-media-list li{
+		width: 100%;
+		padding: 0.4rem 0;
+	}
+
+	i{
+		width: 10%;
+		padding-right: 0.4rem;
+	}
+
+	.social-text {
+		display: inline;
 	}
 }
 
