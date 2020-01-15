@@ -1,0 +1,46 @@
+@import url('./css-reset.css');
+
+/* Header */
+header{
+    height: 10rem;
+    width: 100%;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+};
+
+.logo{
+    height: 2rem;
+    width: 2rem;
+}
+
+nav{
+    width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+/* Main Section */
+main{
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url('../images/flower-bkgd.jpg');
+        background-position: center;
+        background-size: cover;
+    height: 20rem;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+/* Sections */
+section {
+    height: 20rem;
+}
