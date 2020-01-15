@@ -14,6 +14,9 @@ body {
 }
 
 /* Add a container tag */
+.container {
+	width: 90%;
+}
 
 h1,
 h2 {
@@ -32,7 +35,6 @@ h3 {
 p {
 	font-size: 1.2rem;
 	line-height: 2rem;
-	width: 90%;
 	word-wrap: break-word;
 	padding-bottom: 3rem;
 }
@@ -147,32 +149,26 @@ main h1 {
 
 /* Section of Select Items */
 .select-items {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 14rem);
 }
 
 .select-box {
 	background-position: center;
 	background-size: cover;
 	color: white;
-	height: 12rem;
 	font-family: Raleway;
 	font-size: 1.4rem;
 	padding: 0%;
 }
 
 .big-card {
-	width: 100%;
-	border-top: solid 0.2rem white;
-	border-bottom: solid 0.2rem white;
-	border-left: solid 0.3rem white;
-	border-right: solid 0.3rem white;
+	grid-column: span 2;
 }
 
 .normal-card {
-	width: 48%;
-	border: solid 0.2rem white;
+	grid-column: span 1;
 }
 
 .men {
@@ -182,6 +178,8 @@ main h1 {
 			rgba(0, 0, 0, 0.4)
 		),
 		url('../images/mens-category.jpg');
+	border-top: solid 0.2rem white;
+	border-bottom: solid 0.2rem white;
 }
 
 .trends {
@@ -191,6 +189,8 @@ main h1 {
 			rgba(0, 0, 0, 0.4)
 		),
 		url('../images/trends-category.jpg');
+	border-bottom: solid 0.2rem white;
+	border-right: solid 0.1rem white;
 }
 
 .glasses {
@@ -200,6 +200,8 @@ main h1 {
 			rgba(0, 0, 0, 0.4)
 		),
 		url('../images/glasses-category.jpg');
+	border-bottom: solid 0.2rem white;
+	border-left: solid 0.1rem white;
 }
 
 .sale {
@@ -209,6 +211,7 @@ main h1 {
 			rgba(0, 0, 0, 0.4)
 		),
 		url('../images/sale-category.jpg');
+	border-right: solid 0.1rem white;
 }
 
 .bags {
@@ -218,6 +221,7 @@ main h1 {
 			rgba(0, 0, 0, 0.4)
 		),
 		url('../images/bags-category.jpg');
+	border-left: solid 0.1rem white;
 }
 
 .womens {
@@ -227,6 +231,8 @@ main h1 {
 			rgba(0, 0, 0, 0.4)
 		),
 		url('../images/womens-category.jpg');
+	border-bottom: solid 0.2rem white;
+	border-top: solid 0.2rem white;
 }
 
 /* Product Cards Section */
@@ -248,33 +254,34 @@ main h1 {
 	background-size: cover;
 	color: white;
 	text-shadow: 0.1rem 0.1rem 0.3rem #525151;
+	border-bottom: solid 0.2rem white;
 }
 
 form {
-    padding-bottom: 3rem;
-    position: relative;
-    width: 80%;
+	padding-bottom: 3rem;
+	position: relative;
+	width: 80%;
 }
 
 input,
 button {
-    border-radius: 4rem;
-    border: solid white;
+	border-radius: 4rem;
+	border: solid white;
 	padding: 0.4rem;
-    box-shadow: none;
-    width: 80%;
+	box-shadow: none;
+	width: 80%;
 }
 
 input {
-    padding: ;
+	padding: ;
 }
 
 button {
 	position: absolute;
 	background-color: #e2574c;
 	color: white;
-    right: 0;
-    width: 25%;
+	right: 0;
+	width: 25%;
 }
 
 /* Footer */
@@ -282,7 +289,19 @@ footer {
 	background-color: #242424;
 	color: white;
 	font-size: 1rem;
-	padding: 2rem;
+	/* padding: 2rem; */
+}
+
+li {
+	margin: 1rem;
+}
+
+li p {
+	line-height: 1.6rem;
+}
+
+.basic-information-list {
+	padding-top: 3rem;
 }
 
 .basic-information-list p {
@@ -292,7 +311,8 @@ footer {
 
 .social-media-list {
 	display: flex;
-	padding-top: 1rem;
+	justify-content: center;
+	padding-bottom: 3rem;
 }
 
 @media only screen and (min-width: 600px) {
