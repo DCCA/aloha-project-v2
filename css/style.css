@@ -1,23 +1,70 @@
 @import url('./css-reset.css');
+/* Meta: less then 620 lines */
+
+/* General style */
+body{
+    min-width: 355px;
+    text-align: center;
+    color: #2d2d2d;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+a{
+    color: #e2574c;
+}
+
+a:hover{
+    color: #b64036;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 /* Header */
 header{
-    height: 10rem;
-    width: 100%;
-    padding: 0.8rem;
+    padding: 0.8rem 0.8rem 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-};
+}
 
 .logo{
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    padding-bottom: 0.4rem;
+}
+
+.cart{
+    height: 3.4rem;
+    padding-bottom: 0.5rem;
 }
 
 nav{
+    padding: 0.6rem;
     width: 100%;
+    order: 3;
+    display: flex;
+    justify-content: space-around;
+    border-top: solid 0.001rem #d7d7d7;
 }
 
 nav a{
@@ -27,12 +74,19 @@ nav a{
 
 /* Main Section */
 main{
+    position: relative;
     background-image: 
         linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
         url('../images/flower-bkgd.jpg');
-        background-position: center;
-        background-size: cover;
+    background-position: center;
+    background-size: cover;
     height: 20rem;
+    overflow: hidden;
+}
+.banner-girl{
+    position: absolute;
+    height: 96%;
+    bottom: -2rem;
 }
 
 h1{
@@ -40,7 +94,73 @@ h1{
     text-align: center;
 }
 
-/* Sections */
-section {
-    height: 20rem;
+.bring-front{
+    z-index: 1;
+}
+
+/* Sections Hand-craft*/
+
+
+/* Section of Select Items */
+.select-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.select-box{
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 10rem;
+}
+
+.big-card{
+    width: 100%;
+}
+
+.normal-card{
+    width: 50%;
+}
+
+.men{
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url('../images/mens-category.jpg');
+}
+
+.trends{
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url('../images/trends-category.jpg');
+}
+
+.glasses{
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url('../images/glasses-category.jpg');
+}
+
+.sale{
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url('../images/sale-category.jpg');
+}
+
+.bags{
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url('../images/bags-category.jpg');
+}
+
+.womens{
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  
+        url('../images/womens-category.jpg');
+}
+
+/* Footer */
+footer{
+    background-color: #242424;
 }
