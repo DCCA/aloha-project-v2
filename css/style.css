@@ -99,20 +99,13 @@ main{
         url('../images/flower-bkgd.jpg');
     background-position: center;
     background-size: cover;
-    height: 20rem;
+    height: 24rem;
     overflow: hidden;
 }
 
 .girl{
-    background-image: 
-        /* linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  */
-        url('../images/banner-girl.png');
-    background-position: center;
-    background-size: 30%;
-    background-repeat: no-repeat;
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 96%;
     bottom: -2rem;
 }
 
@@ -126,11 +119,17 @@ main{
 
 main p{
     color: white;
+    padding-bottom: 1rem;
+    text-shadow: 0.1rem 0.1rem 0.3rem #525151;
 }
 
-h1{
+main h1{
     color: white;
     text-align: center;
+    width: 80%;
+    word-wrap: break-word;
+    padding-top: 0;
+    text-shadow: 0.1rem 0.1rem 0.3rem #525151;
 }
 
 .bring-front{
@@ -210,16 +209,29 @@ h1{
 }
 
 /* Product Cards Section */
+.product-cards h4, .product-cards p{
+    color:  #969696;
+    width: 100%;
+}
 
 /* Subscriber Section */
 .sign-up-section{
-    background-image: url('../images/wave-bkgd.jpg');
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+        url('../images/wave-bkgd.jpg');
     background-position: center;
     background-size: cover;
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.3rem #525151;
 }
 
 /* Footer */
 footer{
     background-color: #242424;
     color: white;
+    font-size: 1rem;
+}
+
+.social-media-list{
+    display: flex;
 }
