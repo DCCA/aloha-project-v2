@@ -14,16 +14,21 @@ body{
 h1, h2{
     font-size: 2.5rem;
     font-family: Playfair Display;
+    padding: 3rem 0rem 2rem;
 }
 
 h3{
     font-size: 1.8rem;
     font-family: Playfair Display;
+    color: #e2574c;
 }
 
 p{
     font-size: 1.2rem;
     line-height: 2rem;
+    width: 90%;
+    word-wrap: break-word;
+    padding-bottom: 3rem;
 }
 
 a{
@@ -50,6 +55,7 @@ a:hover{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 /* Header */
@@ -132,7 +138,9 @@ h1{
 }
 
 /* Sections Hand-craft*/
-
+.hand-craft-section h2{
+    padding-bottom: 2rem;
+}
 
 /* Section of Select Items */
 .select-items{
@@ -149,6 +157,7 @@ h1{
     height: 12rem;
     font-family: Raleway;
     font-size: 1.4rem;
+    padding: 0%;
 }
 
 .big-card{
@@ -198,6 +207,15 @@ h1{
     background-image:
         linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  
         url('../images/womens-category.jpg');
+}
+
+/* Product Cards Section */
+
+/* Subscriber Section */
+.sign-up-section{
+    background-image: url('../images/wave-bkgd.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 /* Footer */
