@@ -3,235 +3,275 @@
 /* Goal: less then 620 lines */
 
 /* General style */
-body{
-    min-width: 355px;
-    text-align: center;
-    color: #2d2d2d;
-    font-family: Raleway;
-    box-sizing: border-box;
+html, 
+body {
+    font-size: 14px;
+	min-width: 355px;
+	text-align: center;
+	color: #2d2d2d;
+	font-family: Raleway;
+	box-sizing: border-box;
 }
 
-h1, h2{
-    font-size: 2.5rem;
-    font-family: Playfair Display;
-    padding: 3rem 0rem 2rem;
+h1,
+h2 {
+	font-size: 2.5rem;
+	font-family: Playfair Display;
+	padding: 3rem 0rem 2rem;
 }
 
-h3{
-    font-size: 1.8rem;
-    font-family: Playfair Display;
+h3 {
+	font-size: 1.8rem;
+	font-family: Playfair Display;
     color: #e2574c;
+    padding: 1.4rem 0;
 }
 
-p{
-    font-size: 1.2rem;
-    line-height: 2rem;
-    width: 90%;
-    word-wrap: break-word;
-    padding-bottom: 3rem;
+p {
+	font-size: 1.2rem;
+	line-height: 2rem;
+	width: 90%;
+	word-wrap: break-word;
+	padding-bottom: 3rem;
 }
 
-a{
-    color: #e2574c;
+a {
+	color: #e2574c;
 }
 
-a:hover{
-    color: #b64036;
+a:hover {
+	color: #b64036;
 }
 
-.uppercase{
-    text-transform: uppercase;
+.uppercase {
+	text-transform: uppercase;
 }
 
-.italic{
-    font-style: italic;
+.italic {
+	font-style: italic;
 }
 
-.bold{
-    font-weight: bold;
+.bold {
+	font-weight: bold;
 }
 
-.flex-center{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.flex-center {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 /* Header */
-header{
-    padding: 0.8rem 0.8rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+header {
+	padding: 0.8rem 0.8rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-.logo{
-    height: 3rem;
-    padding-bottom: 0.4rem;
+.logo {
+	height: 3rem;
+	padding-bottom: 0.4rem;
 }
 
-.cart{
-    height: 3.4rem;
-    padding-bottom: 0.5rem;
+.cart {
+	height: 3.4rem;
+	padding-bottom: 0.5rem;
 }
 
-nav{
-    padding: 0.6rem;
-    width: 100%;
-    order: 3;
-    display: flex;
-    justify-content: space-around;
-    border-top: solid 0.001rem #d7d7d7;
+nav {
+	padding: 0.6rem;
+	width: 100%;
+	order: 3;
+	display: flex;
+	justify-content: space-around;
+	border-top: solid 0.002rem #d7d7d7;
 }
 
-nav a{
-    text-decoration: none;
-    font-size: 0.8rem;
+nav a {
+	text-decoration: none;
+	font-size: 0.8rem;
 }
 
 /* Main Section */
-main{
-    position: relative;
-    background-image:
-        /* linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  */
-        url('../images/flower-bkgd.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 24rem;
-    overflow: hidden;
+main {
+	position: relative;
+	background-image:
+        /* linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  */ url('../images/flower-bkgd.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 24rem;
+	overflow: hidden;
 }
 
-.girl{
-    position: absolute;
-    height: 96%;
-    bottom: -2rem;
+.girl {
+	position: absolute;
+	height: 96%;
+	bottom: -2rem;
 }
 
-.gradient{
-    z-index: 1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    width: 100%;
-    height: 100%;
-    position: absolute;
+.gradient {
+	z-index: 1;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+	width: 100%;
+	height: 100%;
+	position: absolute;
 }
 
-main p{
-    color: white;
-    padding-bottom: 1rem;
-    text-shadow: 0.1rem 0.1rem 0.3rem #525151;
+main p {
+	color: white;
+	padding-bottom: 1rem;
+	text-shadow: 0.1rem 0.1rem 0.3rem #525151;
 }
 
-main h1{
-    color: white;
-    text-align: center;
-    width: 80%;
-    word-wrap: break-word;
-    padding-top: 0;
-    text-shadow: 0.1rem 0.1rem 0.3rem #525151;
+main h1 {
+	color: white;
+	width: 80%;
+	word-wrap: break-word;
+	padding-top: 0;
+	text-shadow: 0.1rem 0.1rem 0.3rem #525151;
 }
 
-.bring-front{
-    z-index: 2;
+.bring-front {
+	z-index: 2;
 }
 
 /* Sections Hand-craft*/
-.hand-craft-section h2{
-    padding-bottom: 2rem;
+.hand-craft-section h2 {
+	padding-bottom: 2rem;
 }
 
 /* Section of Select Items */
-.select-items{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.select-items {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 
-.select-box{
-    background-position: center;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    height: 12rem;
-    font-family: Raleway;
-    font-size: 1.4rem;
-    padding: 0%;
+.select-box {
+	background-position: center;
+	background-size: cover;
+	color: white;
+	height: 12rem;
+	font-family: Raleway;
+	font-size: 1.4rem;
+	padding: 0%;
 }
 
-.big-card{
-    width: 100%;
-    border-top: solid 0.2rem white;
-    border-bottom: solid 0.2rem white;
-    border-left: solid 0.3rem white;
-    border-right: solid 0.3rem white;
+.big-card {
+	width: 100%;
+	border-top: solid 0.2rem white;
+	border-bottom: solid 0.2rem white;
+	border-left: solid 0.3rem white;
+	border-right: solid 0.3rem white;
 }
 
-.normal-card{
-    width: 48%;
-    border: solid 0.2rem white;
+.normal-card {
+	width: 48%;
+	border: solid 0.2rem white;
 }
 
-.men{
-    background-image: 
-        linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url('../images/mens-category.jpg');
+.men {
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.4),
+			rgba(0, 0, 0, 0.4)
+		),
+		url('../images/mens-category.jpg');
 }
 
-.trends{
-    background-image:
-        linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url('../images/trends-category.jpg');
+.trends {
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.4),
+			rgba(0, 0, 0, 0.4)
+		),
+		url('../images/trends-category.jpg');
 }
 
-.glasses{
-    background-image: 
-        linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url('../images/glasses-category.jpg');
+.glasses {
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.4),
+			rgba(0, 0, 0, 0.4)
+		),
+		url('../images/glasses-category.jpg');
 }
 
-.sale{
-    background-image: 
-        linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url('../images/sale-category.jpg');
+.sale {
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.4),
+			rgba(0, 0, 0, 0.4)
+		),
+		url('../images/sale-category.jpg');
 }
 
-.bags{
-    background-image:
-        linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url('../images/bags-category.jpg');
+.bags {
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.4),
+			rgba(0, 0, 0, 0.4)
+		),
+		url('../images/bags-category.jpg');
 }
 
-.womens{
-    background-image:
-        linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  
-        url('../images/womens-category.jpg');
+.womens {
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.4),
+			rgba(0, 0, 0, 0.4)
+		),
+		url('../images/womens-category.jpg');
 }
 
 /* Product Cards Section */
-.product-cards h4, .product-cards p{
-    color:  #969696;
-    width: 100%;
+.product-cards h4,
+.product-cards p {
+	color: #969696;
+	width: 100%;
 }
 
 /* Subscriber Section */
-.sign-up-section{
-    background-image:
-        linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-        url('../images/wave-bkgd.jpg');
-    background-position: center;
-    background-size: cover;
-    color: white;
-    text-shadow: 0.1rem 0.1rem 0.3rem #525151;
+.sign-up-section {
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.2),
+			rgba(0, 0, 0, 0.2)
+		),
+		url('../images/wave-bkgd.jpg');
+	background-position: center;
+	background-size: cover;
+	color: white;
+	text-shadow: 0.1rem 0.1rem 0.3rem #525151;
+}
+
+form {
+	padding-bottom: 3rem;
+}
+
+input,
+button {
+	border-radius: 4rem;
+	padding: 0.4rem;
 }
 
 /* Footer */
-footer{
-    background-color: #242424;
-    color: white;
-    font-size: 1rem;
+footer {
+	background-color: #242424;
+	color: white;
+	font-size: 1rem;
+	padding: 2rem;
 }
 
-.social-media-list{
-    display: flex;
+.basic-information-list p {
+	padding-bottom: 0;
+	width: 100%;
+}
+
+.social-media-list {
+	display: flex;
+	padding-top: 1rem;
 }
