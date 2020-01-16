@@ -7,10 +7,12 @@ html,
 body {
     font-size: 14px;
     min-width: 355px;
+    max-width: 1400px;
     text-align: center;
     color: #2d2d2d;
     font-family: Raleway;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 /* Add a container tag */
@@ -85,9 +87,29 @@ header {
     padding-bottom: 0.4rem;
 }
 
+.cart-group {
+    position: relative;
+}
+
 .cart {
     height: 9vh;
     padding-bottom: 0.5rem;
+}
+
+.cart-counter-noshow {
+    display: none;
+}
+
+p.cart-counter-show {
+    position: absolute;
+    background-color: #e2574c;
+    top: 0;
+    right: 0;
+    padding: 0.3rem 0.5rem;
+    border-radius: 6rem;
+    color: white;
+    line-height: 1;
+    vertical-align: middle;
 }
 
 nav {
@@ -238,12 +260,13 @@ main h1 {
     padding-bottom: 0;
 }
 
-.carousel-cell {
-    width: 100%;
+.add-product {
+    width: 40%;
+    position: relative;
 }
 
-.flickity-page-dots {
-    bottom: 2rem;
+.carousel-cell {
+    width: 100%;
 }
 
 /* Subscriber Section */
