@@ -263,7 +263,7 @@ main h1 {
 form {
 	padding-bottom: 3rem;
 	position: relative;
-	width: 80%;
+	display: flex;
 }
 
 input,
@@ -272,11 +272,10 @@ button {
 	border: solid white;
 	padding: 0.4rem;
 	box-shadow: none;
-	width: 80%;
 }
 
 input {
-	padding: ;
+	width: 90%;
 }
 
 button {
@@ -311,6 +310,10 @@ li p {
 	width: 100%;
 }
 
+.adress-text{
+	color: #969696;
+}
+
 .social-media-list {
 	display: flex;
 	justify-content: center;
@@ -343,6 +346,43 @@ li p {
 
 	.normal-card {
 		grid-column: span 1;
+	}
+
+	.men {
+		border-top: solid 0.2rem white;
+		border-right: solid 0.2rem white;
+	}
+	
+	.trends {
+		border-top: solid 0.2rem white;
+		border-right: solid 0.2rem white;
+		border-bottom: solid 0.2rem white;
+	}
+	
+	.glasses {
+		border-top: solid 0.2rem white;
+		border-bottom: solid 0.2rem white;
+	}
+	
+	.sale {
+		border-right: solid 0.2rem white;
+		border-bottom: solid 0.2rem white;
+	}
+	
+	.bags {
+		border-left: none;
+		border-right: solid 0.2rem white;
+		border-bottom: solid 0.2rem white;
+	}
+	
+	.womens {
+		border-top: none;
+		border-bottom: solid 0.2rem white;
+	}
+
+	/* Subscription Section - Tablet */
+	.container {
+		width: 70%;
 	}
 
 	/* Footer */
@@ -387,5 +427,9 @@ li p {
 @media only screen and (min-width: 1240px) {
 	body {
 		background-color: red;
+	}
+
+	.container {
+		width: 50%;
 	}
 }
