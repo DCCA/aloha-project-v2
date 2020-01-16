@@ -77,15 +77,16 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: white;
+    z-index: 2;
 }
 
 .logo {
-    height: 3rem;
+    height: 8vh;
     padding-bottom: 0.4rem;
 }
 
 .cart {
-    height: 3.4rem;
+    height: 9vh;
     padding-bottom: 0.5rem;
 }
 
@@ -106,7 +107,7 @@ nav a {
 /* Main Section */
 main {
     position: relative;
-    height: 24rem;
+    height: 70vh;
     overflow: hidden;
 }
 
@@ -114,7 +115,7 @@ main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
     background-position: center, bottom, center;
-    background-size: cover, 8.4rem;
+    background-size: cover, 26vh;
     background-repeat: no-repeat;
 }
 
@@ -130,10 +131,6 @@ main h1 {
     word-wrap: break-word;
     padding-top: 0;
     text-shadow: 0.1rem 0.1rem 0.3rem #525151;
-}
-
-.bring-front {
-    z-index: 2;
 }
 
 /* Sections Hand-craft*/
@@ -241,6 +238,10 @@ main h1 {
     padding-bottom: 0;
 }
 
+.carousel-cell {
+    width: 100%;
+}
+
 .flickity-page-dots {
     bottom: 2rem;
 }
@@ -326,9 +327,6 @@ li p {
 
 /* Tablet */
 @media only screen and (min-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
     /* Section of Select Items - Tablet Version */
     .select-items {
         grid-template-rows: repeat(2, 14rem);
@@ -380,6 +378,11 @@ li p {
         border-bottom: solid 0.2rem white;
     }
 
+    /* Flickty Styles */
+    .carousel-cell {
+        width: 50%;
+    }
+
     /* Subscription Section - Tablet */
     .container {
         width: 70%;
@@ -425,11 +428,11 @@ li p {
 }
 
 @media only screen and (min-width: 1240px) {
-    body {
-        background-color: red;
-    }
-
     .container {
         width: 50%;
+    }
+    /* Flickty Styles */
+    .carousel-cell {
+        width: 25%;
     }
 }
