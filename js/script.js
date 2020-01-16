@@ -17,6 +17,7 @@ document.addEventListener(
         let counter = 0;
         const buttons = document.querySelectorAll('.add-product');
         const cartCounter = document.getElementsByClassName('cart-counter');
+        const navLinks = document.querySelectorAll('.nav-link');
 
         // Functions
         function handleCartCounter() {
@@ -47,8 +48,21 @@ document.addEventListener(
             });
         }
 
+        navLinks.forEach(function(element) {
+            // add click listener for the element in this iteration of the loop
+            element.addEventListener('click', e => {
+                e.preventDefault();
+                let path = e.path[0].text.toLowerCase();
+                document
+                    .getElementById(path)
+                    .scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+            });
+            // how can you get the "href" attribute value of the clicked element to create a string that corresponds the id of the correct section?
+            // get the section by its id using the string from the last step
+            // scroll to that section with .scrollIntoView()
+        });
+
         start();
-        console.log(cartCounter);
     },
     false
 );

@@ -83,7 +83,7 @@ header {
 }
 
 .logo {
-    height: 8vh;
+    height: 3rem;
     padding-bottom: 0.4rem;
 }
 
@@ -92,7 +92,7 @@ header {
 }
 
 .cart {
-    height: 9vh;
+    height: 3.4rem;
     padding-bottom: 0.5rem;
 }
 
@@ -101,6 +101,8 @@ header {
 }
 
 p.cart-counter-show {
+    height: 0.8rem;
+    font-size: 0.8rem;
     position: absolute;
     background-color: #e2574c;
     top: 0;
