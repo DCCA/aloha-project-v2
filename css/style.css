@@ -253,7 +253,7 @@ main h1 {
 			rgba(0, 0, 0, 0.2)
 		),
 		url('../images/wave-bkgd.jpg');
-	background-position: center;
+	background-position: bottom;
 	background-size: cover;
 	color: white;
 	text-shadow: 0.1rem 0.1rem 0.3rem #525151;
