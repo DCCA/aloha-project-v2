@@ -13,11 +13,13 @@ document.addEventListener(
             // options
         });
 
-        // Add Product To Cart
+        // Start cart counter
         let counter = 0;
+        // Get elements
         const buttons = document.querySelectorAll('.add-product');
         const cartCounter = document.getElementsByClassName('cart-counter');
         const navLinks = document.querySelectorAll('.nav-link');
+        const formEmail = document.querySelector('.form-email');
 
         // Functions
         function handleCartCounter() {
@@ -52,6 +54,23 @@ document.addEventListener(
             });
         }
 
+        // Validate e-mail (https://tylermcginnis.com/validate-email-address-javascript/)
+        function emailIsValid(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        // Handle e-mail on submit
+
+        function handleEmail(e) {
+            e.preventDefault();
+            const emailSent = e.target.elements[0].value;
+            if (emailIsValid(emailSent)) {
+                alert('Thanks for your subscription! :D');
+            } else {
+                alert('Your e-mail is incorrect. Try again :(');
+            }
+        }
+
         // Add all event listeners
         function start() {
             cartCounter[0].addEventListener('click', () => {
@@ -66,6 +85,9 @@ document.addEventListener(
                 element.addEventListener('click', e => {
                     handleLinks(e);
                 });
+            });
+            formEmail.addEventListener('submit', e => {
+                handleEmail(e);
             });
         }
 

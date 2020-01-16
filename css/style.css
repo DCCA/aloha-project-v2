@@ -131,7 +131,7 @@ nav a {
 /* Main Section */
 main {
     position: relative;
-    height: 70vh;
+    height: 60vh;
     overflow: hidden;
 }
 
@@ -139,7 +139,7 @@ main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
     background-position: center, bottom, center;
-    background-size: cover, 26vh;
+    background-size: cover, 21vh;
     background-repeat: no-repeat;
 }
 
