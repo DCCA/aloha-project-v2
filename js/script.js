@@ -21,22 +21,38 @@ document.addEventListener(
 
         // Functions
         function handleCartCounter() {
+            // Add +1 counter
             counter++;
             if (counter > 0) {
                 cartCounter[0].textContent = counter;
+                // Display the counter
                 cartCounter[0].classList.remove('cart-counter-noshow');
                 cartCounter[0].classList.add('cart-counter-show');
             }
         }
 
         function resetCounter() {
+            // Set counter to 0
             counter = 0;
             cartCounter[0].textContent = counter;
+            // Hide counter
             cartCounter[0].classList.add('cart-counter-noshow');
             cartCounter[0].classList.remove('cart-counter-show');
         }
 
-        // Add event listener
+        function handleLinks(e) {
+            // Prevent default behaviour
+            e.preventDefault();
+            // Get clicked element
+            let path = e.path[0].getAttribute('href');
+            // Scroll to element
+            document.getElementById(path).scrollIntoView({
+                block: 'nearest',
+                behavior: 'smooth'
+            });
+        }
+
+        // Add all event listeners
         function start() {
             cartCounter[0].addEventListener('click', () => {
                 resetCounter();
@@ -46,21 +62,12 @@ document.addEventListener(
                     handleCartCounter();
                 });
             });
-        }
-
-        navLinks.forEach(function(element) {
-            // add click listener for the element in this iteration of the loop
-            element.addEventListener('click', e => {
-                e.preventDefault();
-                let path = e.path[0].text.toLowerCase();
-                document
-                    .getElementById(path)
-                    .scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+            navLinks.forEach(element => {
+                element.addEventListener('click', e => {
+                    handleLinks(e);
+                });
             });
-            // how can you get the "href" attribute value of the clicked element to create a string that corresponds the id of the correct section?
-            // get the section by its id using the string from the last step
-            // scroll to that section with .scrollIntoView()
-        });
+        }
 
         start();
     },
