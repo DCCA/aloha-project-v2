@@ -27,7 +27,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-family: Playfair Display, Arial, Helvetica, sans-serif;
     color: #e2574c;
     padding: 1.4rem 0;
@@ -292,12 +292,14 @@ input,
 button {
     border-radius: 4rem;
     border: solid white;
-    padding: 0.4rem;
+    padding: 0.6rem;
     box-shadow: none;
+    font-size: 1.2rem;
 }
 
 input {
     width: 90%;
+    padding-right: 25%;
 }
 
 button {
