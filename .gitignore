@@ -9,7 +9,7 @@ ehthumbs.db
 *.Trashes
 
 # Ignore vscode settings
-.vscode
+.vscode/
 
 # Ignore npm packages
 node_modules/
