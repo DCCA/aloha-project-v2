@@ -10,7 +10,7 @@ body {
     max-width: 1400px;
     text-align: center;
     color: #2d2d2d;
-    font-family: Raleway;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     margin: 0 auto;
 }
@@ -326,6 +326,8 @@ li p {
 
 .basic-information-list {
     padding-top: 3rem;
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
 }
 
 .basic-information-list p {
@@ -437,9 +439,12 @@ li p {
         padding-top: 3rem;
     }
 
-    .social-media-list li {
+    .social-media-list li,
+    .social-media-list a {
         width: 100%;
         padding: 0.4rem 0;
+        text-decoration: none;
+        color: white;
     }
 
     i {
