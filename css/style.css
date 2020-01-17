@@ -347,6 +347,9 @@ li p {
 
 /* Tablet */
 @media only screen and (min-width: 600px) {
+    .container {
+        width: 70%;
+    }
     /* Section of Select Items - Tablet Version */
     .select-items {
         grid-template-rows: repeat(2, 14rem);
@@ -404,8 +407,8 @@ li p {
     }
 
     /* Subscription Section - Tablet */
-    .container {
-        width: 70%;
+    .form-email {
+        width: 50%;
     }
 
     /* Footer */
@@ -451,6 +454,11 @@ li p {
     .container {
         width: 50%;
     }
+
+    .form-email {
+        width: 40%;
+    }
+
     /* Flickty Styles */
     .carousel-cell {
         width: 25%;
