@@ -15,7 +15,6 @@ body {
     margin: 0 auto;
 }
 
-/* Add a container tag */
 .container {
     width: 90%;
 }
@@ -125,7 +124,6 @@ nav {
 
 nav a {
     text-decoration: none;
-    font-size: 0.8rem;
 }
 
 /* Main Section */
@@ -138,8 +136,8 @@ main {
 .background-image-banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
-    background-position: center, bottom, center;
-    background-size: cover, 21vh;
+    background-position: center, 50% 280%, center;
+    background-size: cover, 23vh;
     background-repeat: no-repeat;
 }
 
@@ -174,7 +172,6 @@ main h1 {
     background-size: cover;
     color: white;
     font-family: Raleway;
-    font-size: 1.4rem;
     padding: 0%;
 }
 
@@ -252,14 +249,13 @@ main h1 {
 
 /* Product Cards Section */
 .product-cards {
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
 }
 
 .product-cards h4,
 .product-cards p {
     color: #969696;
     width: 100%;
-    padding-bottom: 0;
 }
 
 .add-product {
@@ -316,7 +312,6 @@ button {
 footer {
     background-color: #242424;
     color: white;
-    font-size: 1rem;
 }
 
 li {
