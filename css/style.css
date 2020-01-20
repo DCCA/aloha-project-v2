@@ -129,7 +129,7 @@ nav a {
 /* Main Section */
 main {
     position: relative;
-    height: 60vh;
+    height: 40vh;
     overflow: hidden;
 }
 
@@ -137,7 +137,7 @@ main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
     background-position: center, 50% 280%, center;
-    background-size: cover, 23vh;
+    background-size: cover, 15.3vh;
     background-repeat: no-repeat;
 }
 
@@ -307,7 +307,7 @@ button {
     background-color: #e2574c;
     color: white;
     right: 0;
-    width: 25%;
+    width: 32%;
 }
 
 /* Footer */
@@ -322,12 +322,12 @@ li {
 
 li p {
     line-height: 1.6rem;
+    font-size: 0.9rem;
 }
 
 .basic-information-list {
     padding-top: 3rem;
     font-family: Playfair Display, Arial, Helvetica, sans-serif;
-    font-size: 0.8rem;
 }
 
 .basic-information-list p {
@@ -343,6 +343,11 @@ li p {
     display: flex;
     justify-content: center;
     padding-bottom: 3rem;
+}
+
+.social-media-list a,
+.basic-information-list a {
+    color: white;
 }
 
 .social-text {
@@ -444,7 +449,6 @@ li p {
         width: 100%;
         padding: 0.4rem 0;
         text-decoration: none;
-        color: white;
     }
 
     i {
