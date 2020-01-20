@@ -137,8 +137,8 @@ main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
     background-position: center, 50% 280%, center;
-    background-size: cover, 15.3vh;
-    background-repeat: no-repeat;
+    background-size: cover, 15.3vh, cover;
+    background-repeat: no-repeat, no-repeat, repeat;
 }
 
 main p {
@@ -259,8 +259,9 @@ main h1 {
 }
 
 .add-product {
-    width: 40%;
+    width: 50%;
     position: relative;
+    background-color: #242424;
 }
 
 .carousel-cell {
@@ -367,6 +368,12 @@ li p {
     h2 {
         font-size: 3rem;
     }
+
+    .background-image-banner {
+        background-size: cover, 15.3vh, contain;
+        background-repeat: no-repeat, no-repeat, repeat;
+    }
+
     /* Section of Select Items - Tablet Version */
     .select-items {
         grid-template-rows: repeat(2, 14rem);
@@ -475,11 +482,20 @@ li p {
 
 @media only screen and (min-width: 1240px) {
     .container {
-        width: 50%;
+        width: 57%;
     }
 
     .form-email {
         width: 40%;
+    }
+
+    /* Section of Select Items - Tablet Version */
+    .select-items {
+        grid-template-rows: repeat(2, 16rem);
+    }
+
+    ul.social-media-list {
+        width: 12%;
     }
 
     /* Flickty Styles */
