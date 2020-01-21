@@ -2,8 +2,8 @@
 
 ## About
 
-This is project focused on creating a mobile-first web-page based on design specs.
-Tha page also has a carousel that was made using Flickity (https://flickity.metafizzy.co/) and a add product featured made with basic vanilla javascript.
+This is a project focused on creating a mobile-first web-page using design specs as a reference.
+Tha page also has a carousel that was build using [Flickity](https://flickity.metafizzy.co/) and a "add product" feature made with basic vanilla javascript.
 
 ## Technology
 
