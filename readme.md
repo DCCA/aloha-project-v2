@@ -7,4 +7,4 @@ Tha page also has a carousel that was build using [Flickity](https://flickity.me
 
 ## Technology
 
-The webpage was made with basic with HTML, CSS and JS.
+The webpage was made with basic HTML, CSS and JS.
