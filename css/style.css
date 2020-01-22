@@ -129,7 +129,7 @@ nav a {
 /* Main Section */
 main {
     position: relative;
-    height: 40vh;
+    height: 50vh;
     overflow: hidden;
 }
 
@@ -137,7 +137,7 @@ main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url('../images/banner-girl.png'), url('../images/flower-bkgd.jpg');
     background-position: center, 50% 280%, center;
-    background-size: cover, 15.3vh, cover;
+    background-size: cover, 19.3vh, cover;
     background-repeat: no-repeat, no-repeat, repeat;
 }
 
@@ -370,7 +370,7 @@ li p {
     }
 
     .background-image-banner {
-        background-size: cover, 15.3vh, contain;
+        background-size: cover, 19.3vh, contain;
         background-repeat: no-repeat, no-repeat, repeat;
     }
 
