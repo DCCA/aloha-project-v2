@@ -479,7 +479,7 @@ li p {
         display: inline;
     }
 }
-
+/* Desktop version */
 @media only screen and (min-width: 1240px) {
     .container {
         width: 57%;
@@ -488,8 +488,14 @@ li p {
     .form-email {
         width: 40%;
     }
+    main {
+        height: 70vh;
+    }
+    .background-image-banner {
+        background-size: cover, 27vh, contain;
+    }
 
-    /* Section of Select Items - Tablet Version */
+    /* Section of Select Items - Desktop Version */
     .select-items {
         grid-template-rows: repeat(2, 16rem);
     }
