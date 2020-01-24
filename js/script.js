@@ -49,16 +49,10 @@ document.addEventListener(
             let path = e.path[0].getAttribute('href');
             // Get Y value of the element
             const y = document.getElementById(path).getBoundingClientRect().top;
-            console.log(document.getElementById(path).getBoundingClientRect());
-            console.log('Y:' + y);
+            // Get size of the header
             var headerSize = document.getElementById('header').offsetHeight;
-            console.log('HS:' + headerSize);
             // Scroll to element
             window.scrollTo(0, y + window.scrollY - headerSize, 'smooth');
-            // document.getElementById(path).scrollIntoView({
-            //     block: 'start',
-            //     behavior: 'smooth'
-            // });
         }
 
         // Validate e-mail (https://tylermcginnis.com/validate-email-address-javascript/)
