@@ -280,6 +280,7 @@ form {
     padding-bottom: 3rem;
     position: relative;
     display: flex;
+    width: 90%;
 }
 
 input,
@@ -355,7 +356,7 @@ li p {
     }
 
     .background-image-banner {
-        background-size: cover, 19.3vh, contain;
+        background-size: cover, 19.3vh, cover;
         background-repeat: no-repeat, no-repeat, repeat;
     }
 
@@ -389,7 +390,7 @@ li p {
 
     /* Subscription Section - Tablet */
     .form-email {
-        width: 50%;
+        width: 70%;
     }
 
     /* Footer */
