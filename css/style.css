@@ -16,6 +16,7 @@ body {
 
 .container {
     width: 90%;
+    margin: 0 auto;
 }
 
 h1,
@@ -157,6 +158,7 @@ main h1 {
 /* Sections Hand-craft*/
 .hand-craft-section h2 {
     padding-bottom: 2rem;
+    margin: 0 auto;
 }
 
 /* Section of Select Items */
@@ -350,10 +352,6 @@ li p {
         font-size: 16px;
     }
 
-    .container {
-        width: 70%;
-    }
-
     h1,
     h2 {
         font-size: 3rem;
@@ -398,7 +396,7 @@ li p {
     }
 
     /* Footer */
-    footer.flex-center {
+    footer > div.flex-center {
         flex-direction: row;
         text-align: left;
         padding-bottom: 3rem;
@@ -439,10 +437,6 @@ li p {
 }
 /* Desktop version */
 @media only screen and (min-width: 1240px) {
-    .container {
-        width: 57%;
-    }
-
     .form-email {
         width: 40%;
     }
